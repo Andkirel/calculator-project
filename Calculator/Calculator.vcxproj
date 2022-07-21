@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ButtonFactory.h" />
     <ClInclude Include="Calc.h" />
     <ClInclude Include="Grid.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ButtonFactory.cpp" />
     <ClCompile Include="Calc.cpp" />
     <ClCompile Include="Grid.cpp" />
   </ItemGroup>
