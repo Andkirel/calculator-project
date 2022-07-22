@@ -1,119 +1,120 @@
-#include "ButtonFactory.h"
 #include "Grid.h"
 #include "wx/wx.h"
-Model::Button ButtonFactory::GetButton()
+#include "ButtonFactory.h"
+
+wxButton* ButtonFactory::GetButton(Grid *grid)
 {
-	btn0 = new wxButton(this, 1, "÷", wxPoint(0, 50), wxSize(75, 75));
+	wxButton* btn0 = new wxButton(grid, 1, "÷", wxPoint(0, 50), wxSize(75, 75));
 	return btn0;
 }
-Model::Button ButtonFactory::GetButton1()
+wxButton* ButtonFactory::GetButton1(Grid* grid)
 {
-	btn1 = new wxButton(this, 2, "X", wxPoint(75, 50), wxSize(75, 75));
+	wxButton* btn1 = new wxButton(grid, 2, "X", wxPoint(75, 50), wxSize(75, 75));
 	return btn1;
 }
-Model::Button ButtonFactory::GetButton2()
+wxButton* ButtonFactory::GetButton2(Grid* grid)
 {
-	btn2 = new wxButton(this, 3, "-", wxPoint(150, 50), wxSize(75, 75));
+	wxButton* btn2 = new wxButton(grid, 3, "-", wxPoint(150, 50), wxSize(75, 75));
 	return btn2;
 }
-Model::Button ButtonFactory::GetButton3()
+wxButton* ButtonFactory::GetButton3(Grid* grid)
 {
-	btn3 = new wxButton(this, 4, "+", wxPoint(225, 50), wxSize(75, 75));
+	wxButton* btn3 = new wxButton(grid, 4, "+", wxPoint(225, 50), wxSize(75, 75));
 	return btn3;
 }
-Model::Button ButtonFactory::GetButton4()
+wxButton* ButtonFactory::GetButton4(Grid* grid)
 {
-	btn4 = new wxButton(this, 5, "C", wxPoint(300, 50), wxSize(75, 75));
+	wxButton* btn4 = new wxButton(grid, 5, "C", wxPoint(300, 50), wxSize(75, 75));
 	return btn4;
 }
-Model::Button ButtonFactory::GetButton5()
+wxButton* ButtonFactory::GetButton5(Grid* grid)
 {
-	btn5 = new wxButton(this, 6, "0", wxPoint(0, 125), wxSize(75, 75));
+	wxButton* btn5 = new wxButton(grid, 6, "0", wxPoint(0, 125), wxSize(75, 75));
 	return btn5;
 }
-Model::Button ButtonFactory::GetButton6()
+wxButton* ButtonFactory::GetButton6(Grid* grid)
 {
-	btn6 = new wxButton(this, 7, "1", wxPoint(75, 125), wxSize(75, 75));
+	wxButton* btn6 = new wxButton(grid, 7, "1", wxPoint(75, 125), wxSize(75, 75));
 	return btn6;
 }
-Model::Button ButtonFactory::GetButton7()
+wxButton* ButtonFactory::GetButton7(Grid* grid)
 {
-	btn7 = new wxButton(this, 8, "2", wxPoint(150, 125), wxSize(75, 75));
+	wxButton* btn7 = new wxButton(grid, 8, "2", wxPoint(150, 125), wxSize(75, 75));
 	return btn7;
 }
-Model::Button ButtonFactory::GetButton8()
+wxButton* ButtonFactory::GetButton8(Grid* grid)
 {
-	btn8 = new wxButton(this, 9, "3", wxPoint(225, 125), wxSize(75, 75));
+	wxButton* btn8 = new wxButton(grid, 9, "3", wxPoint(225, 125), wxSize(75, 75));
 	return btn8;
 }
-Model::Button ButtonFactory::GetButton9()
+wxButton* ButtonFactory::GetButton9(Grid* grid)
 {
-	btn9 = new wxButton(this, 10, "4", wxPoint(300, 125), wxSize(75, 75));
+	wxButton* btn9 = new wxButton(grid, 10, "4", wxPoint(300, 125), wxSize(75, 75));
 	return btn9;
 }
-Model::Button ButtonFactory::GetButton10()
+wxButton* ButtonFactory::GetButton10(Grid* grid)
 {
-	btn10 = new wxButton(this, 11, "5", wxPoint(0, 200), wxSize(75, 75));
+	wxButton* btn10 = new wxButton(grid, 11, "5", wxPoint(0, 200), wxSize(75, 75));
 	return btn10;
 }
-Model::Button ButtonFactory::GetButton11()
+wxButton* ButtonFactory::GetButton11(Grid* grid)
 {
-	btn11 = new wxButton(this, 12, "6", wxPoint(75, 200), wxSize(75, 75));
+	wxButton* btn11 = new wxButton(grid, 12, "6", wxPoint(75, 200), wxSize(75, 75));
 	return btn11;
 }
-Model::Button ButtonFactory::GetButton12()
+wxButton* ButtonFactory::GetButton12(Grid* grid)
 {
-	btn12 = new wxButton(this, 13, "7", wxPoint(150, 200), wxSize(75, 75));
+	wxButton* btn12 = new wxButton(grid, 13, "7", wxPoint(150, 200), wxSize(75, 75));
 	return btn12;
 }
-Model::Button ButtonFactory::GetButton13()
+wxButton* ButtonFactory::GetButton13(Grid* grid)
 {
-	btn13 = new wxButton(this, 14, "8", wxPoint(225, 200), wxSize(75, 75));
+	wxButton* btn13 = new wxButton(grid, 14, "8", wxPoint(225, 200), wxSize(75, 75));
 	return btn13;
 }
-Model::Button ButtonFactory::GetButton14()
+wxButton* ButtonFactory::GetButton14(Grid* grid)
 {
-	btn14 = new wxButton(this, 15, "9", wxPoint(300, 200), wxSize(75, 75));
+	wxButton* btn14 = new wxButton(grid, 15, "9", wxPoint(300, 200), wxSize(75, 75));
 	return btn14;
 }
-Model::Button ButtonFactory::GetButton15()
+wxButton* ButtonFactory::GetButton15(Grid* grid)
 {
-	btn15 = new wxButton(this, 16, ".", wxPoint(0, 275), wxSize(75, 75));
+	wxButton* btn15 = new wxButton(grid, 16, ".", wxPoint(0, 275), wxSize(75, 75));
 	return btn15;
 }
-Model::Button ButtonFactory::GetButton16()
+wxButton* ButtonFactory::GetButton16(Grid* grid)
 {
-	btn16 = new wxButton(this, 17, "%", wxPoint(75, 275), wxSize(75, 75));
+	wxButton* btn16 = new wxButton(grid, 17, "%", wxPoint(75, 275), wxSize(75, 75));
 	return btn16;
 }
-Model::Button ButtonFactory::GetButton17()
+wxButton* ButtonFactory::GetButton17(Grid* grid)
 {
-	btn17 = new wxButton(this, 18, "(-", wxPoint(150, 275), wxSize(75, 75));
+	wxButton* btn17 = new wxButton(grid, 18, "(-", wxPoint(150, 275), wxSize(75, 75));
 	return btn17;
 }
-Model::Button ButtonFactory::GetButton18()
+wxButton* ButtonFactory::GetButton18(Grid* grid)
 {
-	btn18 = new wxButton(this, 19, "()", wxPoint(225, 275), wxSize(75, 75));
+	wxButton* btn18 = new wxButton(grid, 19, "()", wxPoint(225, 275), wxSize(75, 75));
 	return btn18;
 }
-Model::Button ButtonFactory::GetButton19()
+wxButton* ButtonFactory::GetButton19(Grid* grid)
 {
-	btn19 = new wxButton(this, 20, "=", wxPoint(300, 275), wxSize(75, 75));
+	wxButton* btn19 = new wxButton(grid, 20, "=", wxPoint(300, 275), wxSize(75, 75));
 	return btn19;
 }
-Model::Button ButtonFactory::GetButton20()
+wxButton* ButtonFactory::GetButton20(Grid* grid)
 {
-	btn20 = new wxButton(this, 21, "MOD", wxPoint(375, 50), wxSize(75, 100));
+	wxButton* btn20 = new wxButton(grid, 21, "MOD", wxPoint(375, 50), wxSize(75, 100));
 	return btn20;
 }
-Model::Button ButtonFactory::GetButton21()
+wxButton* ButtonFactory::GetButton21(Grid* grid)
 {
-	btn21 = new wxButton(this, 22, "Binary", wxPoint(375, 150), wxSize(75, 100));
+	wxButton* btn21 = new wxButton(grid, 22, "Binary", wxPoint(375, 150), wxSize(75, 100));
 	return btn21;
 }
-Model::Button ButtonFactory::GetButton22()
+wxButton* ButtonFactory::GetButton22(Grid* grid)
 {
-	btn22 = new wxButton(this, 23, "HEX", wxPoint(375, 250), wxSize(75, 100));
+	wxButton* btn22 = new wxButton(grid, 23, "HEX", wxPoint(375, 250), wxSize(75, 100));
 	return btn22;
 }
 
