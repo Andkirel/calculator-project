@@ -1,33 +1,34 @@
 #pragma once
-#include "Grid.h"
+#include "wx/wx.h"
 
 class ButtonFactory
 {
+
 public:
-	Model::Button GetButton();
-	Model::Button GetButton1();
-	Model::Button GetButton2();
-	Model::Button GetButton3();
-	Model::Button GetButton4();
-	Model::Button GetButton5();
-	Model::Button GetButton6();
-	Model::Button GetButton7();
-	Model::Button GetButton8();
-	Model::Button GetButton9();
-	Model::Button GetButton10();
-	Model::Button GetButton11();
-	Model::Button GetButton12();
-	Model::Button GetButton13();
-	Model::Button GetButton14();
-	Model::Button GetButton15();
-	Model::Button GetButton16();
-	Model::Button GetButton17();
-	Model::Button GetButton18();
-	Model::Button GetButton19();
-	Model::Button GetButton20();
-	Model::Button GetButton21();
-	Model::Button GetButton22();
-	Model::Button GetButton23();
+	wxButton* GetButton(class Grid* Grid);
+	wxButton* GetButton1(class Grid* grid);
+	wxButton* GetButton2(class Grid* grid);
+	wxButton* GetButton3(class Grid* grid);
+	wxButton* GetButton4(class Grid* grid);
+	wxButton* GetButton5(class Grid* grid);
+	wxButton* GetButton6(class Grid* grid);
+	wxButton* GetButton7(class Grid* grid);
+	wxButton* GetButton8(class Grid* grid);
+	wxButton* GetButton9(class Grid* grid);
+	wxButton* GetButton10(class Grid* grid);
+	wxButton* GetButton11(class Grid* grid);
+	wxButton* GetButton12(class Grid* grid);
+	wxButton* GetButton13(class Grid* grid);
+	wxButton* GetButton14(class Grid* grid);
+	wxButton* GetButton15(class Grid* grid);
+	wxButton* GetButton16(class Grid* grid);
+	wxButton* GetButton17(class Grid* grid);
+	wxButton* GetButton18(class Grid* grid);
+	wxButton* GetButton19(class Grid* grid);
+	wxButton* GetButton20(class Grid* grid);
+	wxButton* GetButton21(class Grid* grid);
+	wxButton* GetButton22(class Grid* grid);
+	wxButton* GetButton23(class Grid* grid);
 
 };
 
